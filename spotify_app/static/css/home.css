@@ -359,7 +359,7 @@ body {
     flex-direction: row;
   }
   .topic {
-    width: 72px;
+    width: 80px;
     height: 100%;
   }
   .topic svg {

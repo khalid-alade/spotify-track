@@ -184,7 +184,7 @@
                         <div class="res-img-div">
                             <img src="{{ track['album']['images'][0]['url'] }}" alt="track image" class="res-img">
                         </div>
-                        <h1 class="res-name">{{ track['name'] }}</h1>
+                        <h2 class="res-name">{{ track['name'] }}</h2>
                         <div class="res-genres">
                             <span class="art-name">{{ track['album']['name'] }}</span>
                             By: {{ all_artists }}
@@ -239,7 +239,7 @@
                             <img src="{{ track_search['tracks']['items'][0]['album']['images'][0]['url'] }}"
                                 alt="track image" class="res-img">
                         </div>
-                        <h1 class="res-name">{{ track_search['tracks']['items'][0]['name'] }}</h1>
+                        <h2 class="res-name">{{ track_search['tracks']['items'][0]['name'] }}</h2>
                         <div class="res-genres">
                             <span class="art-name" style="font-weight: bold;">{{ track_search['tracks']['items'][0]['album']['name'] }}</span>
                             By: {{ all_artists }}

@@ -225,7 +225,7 @@ body {
   justify-content: center;
   justify-content: flex-end;
   font-size: medium;
-  margin-right: 6px;
+  margin-right: 10px;
 }
 
 @media screen and (max-width: 920px) and (orientation: landscape) {
@@ -288,7 +288,7 @@ body {
     flex-direction: row;
   }
   .topic {
-    width: 72px;
+    width: 80px;
     height: 100%;
   }
   .topic svg {
