@@ -64,7 +64,7 @@ def top_tracks():
     access_token = getToken()
     if access_token != None:
         
-        top_tracks = get_request(access_token, "https://api.spotify.com/v1/tracks?ids=0WtM2NBVQNNJLh6scP13H8,5ycsqezujKrwviU3VFhci1,3eR23VReFzcdmS7TYCrhCe,4T3c3YmtREIOyflo9ytTAL,0TDLuuLlV54CkRRUOahJb4,6bERF1Siw7KAbUtjg0LSas,0pqnGHJpmpxLKifKRmU6WP,0u2P5u6lvoDfwTYjAADbn4,6ocbgoVGwYJhOv1GgI9NsF,0dIoGTQXDh1wVnhIiSyYEa,0QBzMgT7NIeoCYy3sJCof1,5wANPM4fQCJwkGd4rN57mH,7kdmDLwyzFL8jYLzfMvPwQ,6RUKPb4LETWmmr3iAEQktW,6OcCk1dbAb7XNHsC098oEM")
+        top_tracks = get_request(access_token, "https://api.spotify.com/v1/tracks?ids=0WtM2NBVQNNJLh6scP13H8,5ycsqezujKrwviU3VFhci1,3eR23VReFzcdmS7TYCrhCe,0y60itmpH0aPKsFiGxmtnh,0TDLuuLlV54CkRRUOahJb4,6bERF1Siw7KAbUtjg0LSas,0pqnGHJpmpxLKifKRmU6WP,0u2P5u6lvoDfwTYjAADbn4,6ocbgoVGwYJhOv1GgI9NsF,0dIoGTQXDh1wVnhIiSyYEa,0QBzMgT7NIeoCYy3sJCof1,5wANPM4fQCJwkGd4rN57mH,7kdmDLwyzFL8jYLzfMvPwQ,6RUKPb4LETWmmr3iAEQktW,6OcCk1dbAb7XNHsC098oEM")
 
         if top_tracks != None:
             for top_track in top_tracks['tracks']:
@@ -87,7 +87,7 @@ def top_tracks():
 def home():
     access_token = getToken()
     if access_token != None:
-        top_artists  = get_artist(access_token, "https://api.spotify.com/v1/artists?ids=66CXWjxzNUsdJxJ2JdwvnR,0C8ZW7ezQVs4URX5aX7Kqx,6qMGjGD3lmDJtzALZ8uS2z,4kYSro6naA4h99UJvo89HB,1hNaHKp2Za5YdOAG0WnRbc,7n2wHs1TKAczGzO7Dd2rGr,6vWDO969PvNqNYHIOW5v0m,4Ns55iOSe1Im2WU2e1Eym0,7dGJo4pcD2V6oG8kP0tJRR,1XavfPKBpNjkOfxHINlMHF,7vk5e3vY1uw9plTHJAMwjN,246dkjvS1zLTtiykXe5h60,6qqNVTkY8uBg9cP3Jd7DAH")
+        top_artists  = get_artist(access_token, "https://api.spotify.com/v1/artists?ids=66CXWjxzNUsdJxJ2JdwvnR,0C8ZW7ezQVs4URX5aX7Kqx,46pWGuE3dSwY3bMMXGBvVS,5pKCCKE2ajJHZ9KAiaK11H,06HL4z0CvFAxyc27GXpf02,7dGJo4pcD2V6oG8kP0tJRR,1XavfPKBpNjkOfxHINlMHF,7vk5e3vY1uw9plTHJAMwjN,246dkjvS1zLTtiykXe5h60,6qqNVTkY8uBg9cP3Jd7DAH,0Y3agQaa6g2r0YmHPOO9rh,1hNaHKp2Za5YdOAG0WnRbc,7n2wHs1TKAczGzO7Dd2rGr,5YGY8feqx7naU7z4HrwZM6,1uNFoZAHBGtllmzznpCI3s,3TVXtAsR1Inumwj472S9r4,7jksCPW6uDQiTDVbcyLV79,6vWDO969PvNqNYHIOW5v0m,4Ns55iOSe1Im2WU2e1Eym0")
         for artist in top_artists['artists']:
             raw_genre = artist['genres']
             new_genre = ", ".join(map(str,raw_genre))
